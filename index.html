@@ -16,6 +16,8 @@
     --cinza-claro: #f4f4f5;
     --cinza-texto: #52525b;
     --borda: #e4e4e7;
+    --whatsapp: #25d366;
+    --whatsapp-escuro: #1ebe57;
   }
   * { box-sizing: border-box; margin: 0; padding: 0; }
   body { font-family: 'Inter', sans-serif; color: var(--azul); background: var(--branco); }
@@ -54,7 +56,7 @@
   header nav { display: flex; align-items: center; gap: 32px; }
   header nav a.link { color: rgba(255,255,255,0.7); text-decoration: none; font-size: 14px; font-weight: 500; }
   header nav a.btn-header {
-    background: var(--vermelho);
+    background: var(--whatsapp);
     color: white;
     padding: 12px 28px;
     border-radius: 6px;
@@ -64,7 +66,7 @@
     transition: background 0.2s;
     letter-spacing: 0.3px;
   }
-  header nav a.btn-header:hover { background: var(--vermelho-escuro); }
+  header nav a.btn-header:hover { background: var(--whatsapp-escuro); }
 
   /* HERO */
   .hero {
@@ -197,7 +199,7 @@
   .form-card input:focus { border-color: var(--vermelho); }
   .form-card button {
     width: 100%;
-    background: var(--vermelho);
+    background: var(--whatsapp);
     color: white;
     padding: 16px;
     border: none;
@@ -209,7 +211,7 @@
     transition: background 0.2s, transform 0.1s;
     letter-spacing: 0.3px;
   }
-  .form-card button:hover { background: var(--vermelho-escuro); transform: translateY(-1px); }
+  .form-card button:hover { background: var(--whatsapp-escuro); transform: translateY(-1px); }
   .form-card .garantia {
     display: flex;
     align-items: center;
@@ -433,8 +435,8 @@
   .cta-wrapper p { font-size: 18px; opacity: 0.9; max-width: 560px; margin: 0 auto 40px; line-height: 1.7; }
   .btn-cta-final {
     display: inline-block;
-    background: white;
-    color: var(--vermelho);
+    background: var(--whatsapp);
+    color: white;
     padding: 20px 56px;
     border-radius: 8px;
     font-size: 18px;
@@ -443,7 +445,7 @@
     transition: transform 0.2s, box-shadow 0.2s;
     box-shadow: 0 8px 32px rgba(0,0,0,0.2);
   }
-  .btn-cta-final:hover { transform: translateY(-2px); box-shadow: 0 12px 40px rgba(0,0,0,0.3); }
+  .btn-cta-final:hover { background: var(--whatsapp-escuro); transform: translateY(-2px); box-shadow: 0 12px 40px rgba(0,0,0,0.3); }
   .cta-wpp { margin-top: 20px; font-size: 15px; opacity: 0.8; }
   .cta-wpp a { color: white; font-weight: 700; }
 
